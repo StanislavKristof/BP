@@ -1,0 +1,11 @@
+train:
+  _target_: nnintro.datamodule.FOOTBALL_HEATMAP # nnintro.datamodule.FOOTBALL
+  dataset_path: /mnt/nfs-data/public/xkristof # .scratch/datasets/FOOTBALL
+  split: train
+  download: False
+
+val:
+  _target_: nnintro.datamodule.FOOTBALL_HEATMAP # nnintro.datamodule.FOOTBALL_HEATMAP
+  dataset_path: /mnt/nfs-data/public/xkristof # .scratch/datasets/FOOTBALL
+  split: val
+  download: False

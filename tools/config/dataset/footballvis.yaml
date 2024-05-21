@@ -1,0 +1,5 @@
+final:
+  _target_: nnintro.datamodule.FOOTBALL #FOOTBALL_HEATMAP
+  dataset_path: /mnt/nfs-data/public/xkristof #/workspace/nnintro/.scratch/datasets/FOOTBALL
+  split: null
+  download: False

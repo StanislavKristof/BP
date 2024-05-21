@@ -1,0 +1,10 @@
+torchsummary
+pandas
+timm
+scipy
+deeplake
+flask
+matplotlib
+ruamel.yaml
+scikit-learn
+albumentations

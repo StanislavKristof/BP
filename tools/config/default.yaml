@@ -1,0 +1,24 @@
+hydra:
+  run:
+    dir: .scratch/logs/${exp.name}/${exp.ver}
+
+
+# Default groups
+defaults:
+- _self_
+- dataset: football
+- model: football
+
+# Training hyperparameters
+train:
+  batch_size: 32
+  num_workers: 16 #16 # if mekong then 12 # 1 if final
+  num_epochs: 1 #40
+  lr: 0.0005 #0.0005
+
+
+# Experiment stuff
+exp:
+  name: hmtest
+  ver: 0
+  id: ${.name}.${.ver}
